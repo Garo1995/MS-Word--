@@ -95,7 +95,10 @@ let swiper = new Swiper(".banner-slider", {
     grabCursor: true,
     centeredSlides: true,
     slidesPerView: "auto",
-
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     effect: "coverflow",
     coverflowEffect: {
         rotate: 6,
@@ -105,5 +108,5 @@ let swiper = new Swiper(".banner-slider", {
         slideShadows: false,
     },
 
-    speed: 800,
+    speed: 1000,
 });
